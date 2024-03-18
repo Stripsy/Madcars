@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VehiculeActivity">
+
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/loading" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:id="@+id/tvNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:text="@string/nom"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/tvPrix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNom"
+        android:text="@string/prix"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/tvCategorie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPrix"
+        android:text="@string/categorie"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <Switch
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ajout_favoris"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/btnFav"
+        android:layout_below="@+id/tvCategorie"
+        />
+    <Button
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Supprimer"
+        android:textAllCaps="false"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/btnDelete"
+        />
+
+
+
+</RelativeLayout>
